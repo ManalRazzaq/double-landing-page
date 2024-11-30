@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 
+    'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-size: 100px;
+    letter-spacing: 4px;
+    color: aliceblue;
+    backdrop-filter: brightness(50%);
+}
+.btn{
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid white;
+    white-space: nowrap;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.spilt{
+   width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.left{
+    position: absolute;
+    left: 0;
+    background-color: pink;
+    background-image: url(https://www.whatmobile.com.pk/admin/images/Apple/iPhone%2013%20Pro%20Max/Apple-iPhone-13-Pro-Max-Image-2.jpg);
+    background-size:cover;
+}
+.right{
+    position: absolute;
+    right: 0;
+    background-color: grey;
+    background-image: url(https://images-cdn.ubuy.co.in/664b6d0fad965600a752b65d-samsung-mobile-phone-galaxy-s24-128gb.jpg);
+    background-size:cover;
+
+
+}
+.active-right .left{
+width: 25%;
+}
+.active-right .right{
+    width: 75%;
+    }
+.active-left .right{
+    width: 25%;
+    }
+    .active-left .left{
+        width: 75%;
+        }
+
+        .left , .right{
+            transition: width 2s ease-in-out;
+        }
